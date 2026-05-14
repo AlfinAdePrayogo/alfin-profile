@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --accent: #10b981;
+    --accent-foreground: #ffffff;
+  }
+
+  .dark {
+    --background: #0f172a; /* Deep Slate */
+    --foreground: #f8fafc;
+    --muted: #1e293b;
+    --muted-foreground: #a1a1aa; /* Zinc-400 */
+    --accent: #10b981; /* Emerald */
+    --accent-foreground: #ffffff;
+  }
+
+  * {
+    @apply border-slate-200 dark:border-slate-800;
+  }
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] antialiased font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-slate-900/60 backdrop-blur-md border border-slate-800/50;
+  }
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+}
