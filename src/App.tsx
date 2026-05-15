@@ -22,6 +22,9 @@ function App() {
         <ContactSection />
       </main>
       <Footer />
+      
+      {/* 💡 DI SINI PERBAIKANNYA: Tombol dipasang agar tampil melayang */}
+      <ThemeToggle />
     </div>
   );
 }
