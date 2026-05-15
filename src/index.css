@@ -5,26 +5,29 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: #ffffff;
-    --foreground: #c0cdeb;
-    --muted: #f1f5f9;
-    --muted-foreground: #64748b;
-    --accent: #b9b310;
-    --accent-foreground: #ffffff;
+:root {
+    /* Mode Terang: Bersih, Lembut, Kontras Tinggi tapi Nyaman */
+    --background: #f8fafc;           /* Slate 50 - Latar belakang putih lembut */
+    --foreground: #0f172a;           /* Slate 900 - Teks utama sangat gelap agar mudah dibaca */
+    --muted: #f1f5f9;                /* Slate 100 - Latar belakang sekunder/card */
+    --muted-foreground: #64748b;     /* Slate 500 - Teks pendukung/sub-judul */
+    --accent: #059669;               /* Emerald 600 - Warna aksen hijau elegan */
+    --accent-foreground: #ffffff;    /* Teks di atas warna aksen */
   }
 
   .dark {
-    --background: #004455; /* Deep Slate */
-    --foreground: #f8fafc;
-    --muted: #1e293b;
-    --muted-foreground: #5454f3; /* Zinc-400 */
-    --accent: #27ff13; /* blue */
-    --accent-foreground: #ffffff;
+    /* Mode Gelap: Deep, Mewah, Tidak Silau */
+    --background: #09090b;           /* Zinc 950 - Hitam arang yang sangat elegan */
+    --foreground: #f4f4f5;           /* Zinc 100 - Teks utama putih lembut */
+    --muted: #18181b;                /* Zinc 900 - Latar belakang card/komponen */
+    --muted-foreground: #a1a1aa;     /* Zinc 400 - Teks pendukung di mode gelap */
+    --accent: #10b981;               /* Emerald 500 - Aksen hijau yang menyala lembut */
+    --accent-foreground: #09090b;    /* Teks di atas warna aksen */
   }
 
-  * {
-    @apply border-slate-200 dark:border-slate-800;
+* {
+    /* Perbaikan border agar menyatu dengan warna tema baru */
+    @apply border-slate-200 dark:border-zinc-800 transition-colors duration-200;
   }
   body {
     @apply bg-[var(--background)] text-[var(--foreground)] antialiased font-sans;
@@ -33,8 +36,9 @@
 }
 
 @layer utilities {
+  /* Efek Glassmorphism yang disempurnakan untuk kesan premium */
   .glass {
-    @apply bg-slate-900/60 backdrop-blur-md border border-slate-800/50;
+    @apply bg-white/70 dark:bg-zinc-900/70 backdrop-blur-md border border-slate-200/50 dark:border-zinc-800/50;
   }
   .smooth-scroll {
     scroll-behavior: smooth;
