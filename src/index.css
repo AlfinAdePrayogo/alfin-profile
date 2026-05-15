@@ -5,24 +5,36 @@
 @tailwind utilities;
 
 @layer base {
+  /* ==========================================
+     1. TEMA TERANG (LIGHT MODE) - Nyaman Di Mata
+     ========================================== */
 :root {
-    /* Mode Terang: Bersih, Lembut, Kontras Tinggi tapi Nyaman */
-    --background: #f8fafc;           /* Slate 50 - Latar belakang putih lembut */
-    --foreground: #0f172a;           /* Slate 900 - Teks utama sangat gelap agar mudah dibaca */
-    --muted: #f1f5f9;                /* Slate 100 - Latar belakang sekunder/card */
-    --muted-foreground: #64748b;     /* Slate 500 - Teks pendukung/sub-judul */
-    --accent: #059669;               /* Emerald 600 - Warna aksen hijau elegan */
-    --accent-foreground: #ffffff;    /* Teks di atas warna aksen */
+   --background: #f8fafc; /* Abu-abu putih super lembut (Slate-50), tidak bikin silau */
+    --foreground: #0f172a; /* Teks utama biru gelap pekat (Slate-900), sangat kontras & tajam */
+    
+    --muted: #f1f5f9;      /* Latar belakang kartu/kotak mode terang (Slate-100) */
+    --muted-foreground: #475569; /* Teks sekunder/keterangan abu-abu teduh (Slate-600) */
+    
+    --accent: #2563eb;     /* Warna aksen tombol utama: Biru Royal Elegan */
+    --accent-foreground: #ffffff; /* Warna teks di dalam tombol utama (Putih) */
+    
+    --primary: 221.2 83.2% 53.3%; /* Variabel pembantu Tailwind untuk warna biru */
   }
 
+  /* ==========================================
+     2. TEMA GELAP (DARK MODE) - Deep Slate Blue
+     ========================================== */
   .dark {
-    /* Mode Gelap: Deep, Mewah, Tidak Silau */
-    --background: #09090b;           /* Zinc 950 - Hitam arang yang sangat elegan */
-    --foreground: #f4f4f5;           /* Zinc 100 - Teks utama putih lembut */
-    --muted: #18181b;                /* Zinc 900 - Latar belakang card/komponen */
-    --muted-foreground: #a1a1aa;     /* Zinc 400 - Teks pendukung di mode gelap */
-    --accent: #10b981;               /* Emerald 500 - Aksen hijau yang menyala lembut */
-    --accent-foreground: #09090b;    /* Teks di atas warna aksen */
+    --background: #0f172a; /* Deep Slate asli (Biru Gelap Mewah, bukan hijau toska lagi) */
+    --foreground: #f8fafc; /* Teks utama putih bersih agar menyala di latar gelap */
+    
+    --muted: #1e293b;      /* Latar belakang kartu mode gelap (Slate-800) */
+    --muted-foreground: #94a3b8; /* Teks sekunder abu-abu terang kebiruan (Slate-400) */
+    
+    --accent: #3b82f6;     /* Warna aksen tombol mode gelap: Biru Terang Techy */
+    --accent-foreground: #ffffff; /* Warna teks di dalam tombol (Putih) */
+    
+    --primary: 217.2 91.2% 59.8%;
   }
 
 * {
