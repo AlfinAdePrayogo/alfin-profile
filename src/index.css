@@ -7,19 +7,19 @@
 @layer base {
   :root {
     --background: #ffffff;
-    --foreground: #0f172a;
+    --foreground: #014dff;
     --muted: #f1f5f9;
     --muted-foreground: #64748b;
-    --accent: #b92110;
+    --accent: #b9b310;
     --accent-foreground: #ffffff;
   }
 
   .dark {
-    --background: #0f172a; /* Deep Slate */
+    --background: #004cff; /* Deep Slate */
     --foreground: #f8fafc;
     --muted: #1e293b;
     --muted-foreground: #a1a1aa; /* Zinc-400 */
-    --accent: #b92410; /* blue */
+    --accent: #b9b310; /* blue */
     --accent-foreground: #ffffff;
   }
 
