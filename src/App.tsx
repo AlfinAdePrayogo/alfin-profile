@@ -7,7 +7,7 @@ import { SkillsSection } from "./components/sections/SkillsSection";
 import { ProjectsSection } from "./components/sections/ProjectsSection";
 import { InterestsSection } from "./components/sections/InterestsSection";
 import { ContactSection } from "./components/sections/ContactSection";
-import { ThemeToggle } from './components/ui/ThemeToggle';
+import { ThemeToggle } from "./components/ui/ThemeToggle";
 
 function App() {
   return (
