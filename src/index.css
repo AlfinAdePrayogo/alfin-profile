@@ -15,11 +15,11 @@
   }
 
   .dark {
-    --background: #fdef95; /* Deep Slate */
+    --background: #004455; /* Deep Slate */
     --foreground: #f8fafc;
     --muted: #1e293b;
     --muted-foreground: #5454f3; /* Zinc-400 */
-    --accent: #b9b310; /* blue */
+    --accent: #27ff13; /* blue */
     --accent-foreground: #ffffff;
   }
 
