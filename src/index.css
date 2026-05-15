@@ -10,7 +10,7 @@
     --foreground: #0f172a;
     --muted: #f1f5f9;
     --muted-foreground: #64748b;
-    --accent: #10b981;
+    --accent: #b92110;
     --accent-foreground: #ffffff;
   }
 
@@ -19,7 +19,7 @@
     --foreground: #f8fafc;
     --muted: #1e293b;
     --muted-foreground: #a1a1aa; /* Zinc-400 */
-    --accent: #10b981; /* blue */
+    --accent: #b92410; /* blue */
     --accent-foreground: #ffffff;
   }
 
